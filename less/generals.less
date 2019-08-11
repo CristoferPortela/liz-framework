@@ -2,6 +2,10 @@
 
 @import "mix.less";
 
+* {
+    box-sizing: border-box;
+  }
+
 .absolute {.position(absolute)}
 .relative {.position(relative)}
 .fixed    {.position(fixed)}
@@ -55,10 +59,6 @@
 }
 .fw();
 
-.flex {.disp(flex)}
-.grid {.disp(grid)}
-.block{.disp(block)}
-
 .center {.align(center)}
 .right {.align(right)}
 .left {.align(left)}
@@ -84,7 +84,7 @@
 .size-half {.wi-he(50%, auto)}
 
 .rounded-border {border-radius: 5px;}
-.image-circle {border-radius: 50%;}
+.circle {border-radius: 50%;}
 
 .link {
     text-decoration: none;
@@ -102,11 +102,5 @@
 .button {
     .rounded-border();
     .padding(10px 20px);
-    &:click {
-        .trans(0.2);
-        outline: 2px solid rgb(56,176,222);
-    }
-    &:hover {
-        .trans(0.2);
-    }
+    .trans(0.2);
 }

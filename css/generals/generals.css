@@ -1,4 +1,7 @@
 /* basic classes */
+* {
+  box-sizing: border-box;
+}
 .absolute {
   position: absolute;
 }
@@ -121,15 +124,6 @@
 .font-w-1000 {
   font-weight: 1000;
 }
-.flex {
-  display: flex;
-}
-.grid {
-  display: grid;
-}
-.block {
-  display: block;
-}
 .center {
   text-align: center;
 }
@@ -175,7 +169,7 @@
 .rounded-border {
   border-radius: 5px;
 }
-.image-circle {
+.circle {
   border-radius: 50%;
 }
 .link {
@@ -194,13 +188,6 @@
 .button {
   border-radius: 5px;
   padding: 10px 20px;
-}
-.button:click {
-  transition-duration: 0.2;
-  -webkit-transition-duration: 0.2;
-  outline: 2px solid #38b0de;
-}
-.button:hover {
   transition-duration: 0.2;
   -webkit-transition-duration: 0.2;
 }

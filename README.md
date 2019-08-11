@@ -5,6 +5,7 @@ Liz is a beatiful flower, symbol of the north or the destiny of the sailors in t
 ## a little more...
 
 Liz Framework is different from others css frameworks, why? Its ideia is totaly different! Here I do not want (yet) to do and new bootstrap or a new materialize, when I started I just wanted something colorful and a grid with more columns for a more detailed work, here we use a 16 columns grid based in flexbox, but also allow a grid system based in grid too!
+We are a mobile first based framework!
 
 ## How to use this framework
 
@@ -106,5 +107,98 @@ For using a variable, in your stylesheet, you can use something like this: backg
 |teri-gaki-persimmon| #ea5f40|bracing-blue| #004682|
 |spanish-blue| #0370b7|tomb-blue| #0295ce|
 |exquisite-turquoise| #07d1bf|thallium-flame| #60f4a0|
+
+### generals.css
+
+In the generals file, we will find many classes, very very simple, but useful for who don't want to go to atylesheet for making a class for each simple thing, here go a list of classes in this file
+
+| Class name | Explanation | 
+|------------|-------------|
+|.absolute   | position: absolute|
+|.relative   | position: relative|
+|.fixed      | position: fixed|
+|.static     | position: static|
+|.hide-none  | display:none visibility: hidden| 
+|.show       | visibility: visible|
+|.hide       | visibility: hidden|
+|.show-block | visibility: visible display: block|
+|.show-flex  | visibility: visible display: flex|
+|.show-grid  | visibility: visible display: grid|
+|.transition-02 | transition-duration: 0.2s |
+|.transition-05 | transition-duration: 0.5s |
+|.transition-07 | transition-duration: 0.7s |
+|.transition-1  | transition-duration: 1s   |
+|.transition-15 | transition-duration: 1.5s |
+|.ease          | transition-timing-function: ease|
+|.out           | transition-timing-function: out|
+|.ease-out      | transition-timing-function: ease-out|
+|.ease-in       | transition-timing-function: ease-in|
+|.ease-in-out   | transition-timing-function: ease-in-out|
+|.linear        | transition-timing-function: linear|
+|.float-left | float: left|
+|.float-right| float: right|
+|.clear      | clear: both|
+|.clear-left | clear: left|
+|.clear-right| clear: right|
+|.bold       | font-weight: bold|
+|.font-w-100   | font-weight: 100|
+|.font-w-200   | font-weight: 200|
+|.font-w-300   | font-weight: 300|
+|.font-w-400   | font-weight: 400|
+|.font-w-500   | font-weight: 500|
+|.font-w-600   | font-weight: 600|
+|.font-w-700   | font-weight: 700|
+|.font-w-800   | font-weight: 800|
+|.font-w-900   | font-weight: 900|
+|.font-w-1000  | font-weight:1000|
+|.center       | text-align: center|
+|.left         | text-align: left  |
+|.justify      | text-align:justify|
+|.right        | text-align: right |
+|.font-normal   | font-size: 1em |
+|.font-md       | font-size:1.5em|
+|.font-lg       | font-size: 2em |
+|.font-xlg      | font-size: 3em |
+|.title-1       | font-size: 2em font-family: serif text-transform: capitalize |
+|.title-2       | font-size: 1.5em font-family: serif text-transform: capitalize|
+|.size-full     | width: 100% height: auto |
+|.size-half     | width: 50% height: auto  |
+|.rounded-border| border-radius: 5px       |
+|.circle  | border-radius: 50%       |
+|.link          | text-decoration: none &:hover transistion-duration: 0.2s &:click color: inherit &:visited color: inherit  |
+|.button     | border-radius: 5px padding: 10px 20px transistion-duration: 0.2s |
+
+That's it!
+
+### margins.css
+
+This file have some classes usefull when you do not want to make a margin and padding all the time in the tags
+this files carries paddings and mangins classes, easy to use, ex: class="pad-top-10 margin-left-50" this will make a padding-top: 10px and a margin-left: 50px, you can use padding in all directions with the sintax: pad-top-... pad-left-...  pad-bottom-... pad-right-..., use margin in any direction with the sintax margin-top-... margin-left-... margin-right-... margin-bottom-..., all you need to do is change the "..." by a number, you can use 10, 20, 30, 40, 50, 60, 70, 80, 90 and 100, _attention_ using numbers not in the list like pad-top-55 or margin-bottom-22 will make nothing, because there aren't these classes!
+
+_What else?_
+
+We also have classes for all the directions, to do it, the sintax is pad-... and margin-... for example class="pad-50 margin-10" will make a padding: 50px and margin: 10px, that easy
+
+##### Using breakpoints in margin and paddings
+
+Yep! You are allowed to use breakpoins in these classes! How? Just as in grid system! Here, take a look
+```
+<div class="pad-top-lg-100 pad-top-md-50 pad-top-xlg-10"> ... </div>
+```
+with the sm, md, lg and xlg you will be able to specify in what screen size to use certain margin and padding, in all the directions, top, left, right and bottom, here, another example: class="pad-50 pad-md-10 margin-top-lg-20" this will make a padding: 50px, padding: 10px in medium sized devices (bigger than 758px), margin-top: 20px only in desktop (bigger than 992px)
+
+See how liz framework make everything easier?
+
+### forms.css
+
+While in development, untill now there are two classes here
+
+.form and .iTxt I intent to make a class for all the input types
+
+form class have  width: 100%; height: auto; border-radius: 5px; this class is for making a group of forms
+
+The iTxt class have the very same properties, and is used in <input type="text">
+
+### other.css
 
 Liz framework is not finish, neither close!
