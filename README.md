@@ -141,4 +141,4 @@ For using a variable, in your stylesheet, you can use something like this: backg
 |exquisite-turquoise| #07d1bf|
 |thallium-flame| #60f4a0|
 
-Liz framework is not finish, neither close! Check its documentation in https://cristoferportela.github.io/My-portfolio/liz-fw
+Liz framework is not finish, neither close!
