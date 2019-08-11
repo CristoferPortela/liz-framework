@@ -71,7 +71,7 @@ class="fire", it makes the text have the color with the class "fire", or class="
 For using a variable, in your stylesheet, you can use something like this: background-image: linear-gradient(var(--fire), var(--sky)); (of course, this is just a example and you can use the colors in any property you want), now i'll display all the color names, but I won't be wrinting for bg, text color and variables, because they have the same same, just follow the sintax I said, here them go:
 
 |color name | html code |
------------------------------
+|-----------|------------------|
 |blue| blue|
 |sky| #81c8d8|
 |summer-sky| #38b0de|
