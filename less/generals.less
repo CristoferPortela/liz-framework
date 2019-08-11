@@ -1,0 +1,112 @@
+/* basic classes */
+
+@import "mix.less";
+
+.absolute {.position(absolute)}
+.relative {.position(relative)}
+.fixed    {.position(fixed)}
+.static   {.position(static)}
+
+.hide-none {
+    .visib(hidden);
+    .disp(none)
+}
+.hide {.visib(hidden);}
+.show {.visib(visible);}
+
+.show-block {
+    .visib(visible); 
+    .disp(block);
+}
+.show-flex {
+    .visib(visible); 
+    .disp(flex);
+}
+.show-grid {
+    .visib(visible); 
+    .disp(grid);
+}
+
+.transition-02 { .trans(0.2s) }
+.transition-05 { .trans(0.5s) }
+.transition-07 { .trans(0.7s) }
+.transition-1 { .trans(1s) }
+.transition-15 { .trans(1.5s) }
+
+.ease {.tran-kind(ease)}
+.linear {.tran-kind(linear)}
+.ease-in {.tran-kind(ease-in)}
+.ease-out {.tran-kind(ease-out)}
+.ease-in-out {.tran-kind(ease-in-out)}
+
+.float-left {.float(left)}
+.float-right {.float(right)}
+.clear {.clear(both)}
+.clear-left {.clear(left)}
+.clear-right {.clear(right)}
+
+.bold {font-weight: bold;}
+
+.fw(@i:100) when (@i <= 1000) {
+    .font-w-@{i} {
+        font-weight: @i;
+    }
+    .fw(@i + 100);
+}
+.fw();
+
+.flex {.disp(flex)}
+.grid {.disp(grid)}
+.block{.disp(block)}
+
+.center {.align(center)}
+.right {.align(right)}
+.left {.align(left)}
+.justify {.align(justify)}
+
+.font-xlg {.f-size(3em)}
+.font-lg {.f-size(2em)}
+.font-md {.f-size(1.5em)}
+.font-normal {.f-size(1em)}
+
+.title-1 {
+    .font-lg();
+    font-family: serif;
+    text-transform: capitalize;
+}
+.title-2 {
+    .font-md();
+    font-family: serif;
+    text-transform: capitalize;
+}
+
+.size-full {.wi-he(100%, auto)}
+.size-half {.wi-he(50%, auto)}
+
+.rounded-border {border-radius: 5px;}
+.image-circle {border-radius: 50%;}
+
+.link {
+    text-decoration: none;
+    &:hover {
+        .trans(0.2);   
+    }
+    &:click {
+        color: inherit;
+    }
+    &:visited {
+        color: inherit;
+    }
+}
+
+.button {
+    .rounded-border();
+    .padding(10px 20px);
+    &:click {
+        .trans(0.2);
+        outline: 2px solid rgb(56,176,222);
+    }
+    &:hover {
+        .trans(0.2);
+    }
+}
