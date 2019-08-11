@@ -108,6 +108,9 @@ For using a variable, in your stylesheet, you can use something like this: backg
 |spanish-blue| #0370b7|tomb-blue| #0295ce|
 |exquisite-turquoise| #07d1bf|thallium-flame| #60f4a0|
 
+You can also use black, white and grey, but in grey you need to specify what grey you want, we have
+grey-111, grey-222, grey-333, grey-444, grey-555, grey-666, grey-777, grey-888, grey-999, grey-aaa, grey-bbb, grey-ccc, grey-ddd, grey-eee, these are the hexadecimal colors, from #111 to #fff
+
 ### generals.css
 
 In the generals file, we will find many classes, very very simple, but useful for who don't want to go to atylesheet for making a class for each simple thing, here go a list of classes in this file
@@ -200,5 +203,62 @@ form class have  width: 100%; height: auto; border-radius: 5px; this class is fo
 The iTxt class have the very same properties, and is used in <input type="text">
 
 ### other.css
+
+Here we have some nice classes too!
+
+#### underline
+
+The first is the underline, well how it is in a .md file I can't show how amazing they are, but in future I'll be writing a complete documentation about them, by now, you can use the classes to see them in action!
+
+.underline-middle and .underline-left
+
+underline-middle, have you ever seen a underline effect that there's not and uderline, but when you hover the text, the underline grows from the middle? This is exactly what this class does!
+
+underline-left, the same as in underline-middle, but here the underline grows from the left to the right
+
+**Attention**
+
+If you just do that, won't be happening anything! Why? Because you didn't defined a color to it yet, how to define a color? Remember the colors.css file? Yes, you can use all those colors! But... not with the bg-... neither the name of the color itself, here we need a different sintax
+
+```
+<a class="underline-middle m-fire"> ... </a>
+<a class="underline-left l-sky"> ... </a>
+```
+Understand? For use a underline-middle color, you will need to use m-color-name, and for the underline-left, use l-color-name, why? Well them have a css sintax that need a different class for working.
+
+I hope you enjoy the underlines.
+
+#### message box
+
+Thanks to Luciano Alvez, he did this message box and I asked him to use in this framework, you can find more about this message box in [Message box](https://codepen.io/Nusky/pen/NogRVb?fbclid=IwAR0pArF1_fx4FGqBca5G4kuBt9pE7xa7BL0n5_DcZTl_SBwBVUJpNVwF0wo)
+
+To use in this framework I edited the classes names
+
+Here go the code template for using a message box
+
+```
+<div class="mes-box">
+    <div class="mes-box-theme">
+        <div class="mes-box-title">
+            Title 1
+        </div>
+        <div class="mes-box-content">
+            Content of the box
+        </div>
+    </div>
+</div>
+<div class="mes-box">
+    <div class="mes-box-theme">
+        <div class="mes-box-title">
+            Title 2
+        </div>
+        <div class="mes-box-content">
+            Content of the box 2
+        </div>
+    </div>
+</div>
+```
+
+That's all for now... Give-me your feedback, issue, anything! I'll be glad to answer questions and be helped by you to make this framework greater and greater!
 
 Liz framework is not finish, neither close!
