@@ -24,6 +24,14 @@
 .show {
   visibility: visible;
 }
+.hide-height {
+  visibility: hidden;
+  height: 0;
+}
+.show-height {
+  visibility: hidden;
+  height: auto;
+}
 .show-block {
   visibility: visible;
   display: block;
