@@ -1,23 +1,23 @@
 class Basics
 {
-	hide(i)
+	static hide(i)
 	{
 		let hide = document.querySelector(i);
 		hide.classList.remove('show-height');
 		hide.classList.add('hide-height');
 	}
-	show(i)
+	static show(i)
 	{
 		let show = document.querySelector(i);
 		show.classList.remove('hide-height');
 		show.classList.add('show-height');
 	}
-	createHtml(i, content)
+	static createHtml(i, content)
 	{
 		let el = document.querySelector(i);
 		el.innerHTML += content;
 	}
-	replaceHtml(i, content)
+	static replaceHtml(i, content)
 	{
 		let el = document.querySelector(i);
 		el.innerHTML = content;
