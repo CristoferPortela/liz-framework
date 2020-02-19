@@ -43,7 +43,7 @@
 .transition-02 { .trans(0.2s) }
 .transition-05 { .trans(0.5s) }
 .transition-07 { .trans(0.7s) }
-.transition-1 { .trans(1s) }
+.transition-1  { .trans(1s) }
 .transition-15 { .trans(1.5s) }
 
 .ease {.tran-kind(ease)}
@@ -77,6 +77,7 @@
 .font-lg {.f-size(2em)}
 .font-md {.f-size(1.5em)}
 .font-normal {.f-size(1em)}
+.font-small { .f-size(.7em) }
 
 .title-1 {
     .font-lg();
@@ -89,8 +90,8 @@
     text-transform: capitalize;
 }
 
-.size-full {.wi-he(100%, auto)}
-.size-half {.wi-he(50%, auto)}
+.size-full {.wi-he(100%, auto) }
+.size-half {.wi-he(50%, auto) }
 
 .rounded-border {border-radius: 5px;}
 .circle {border-radius: 50%;}
@@ -98,18 +99,12 @@
 .link {
     text-decoration: none;
     &:hover {
-        .trans(0.2);   
-    }
-    &:click {
-        color: inherit;
-    }
-    &:visited {
-        color: inherit;
+        .trans(0.2s);   
     }
 }
 
 .button {
     .rounded-border();
     .padding(10px 20px);
-    .trans(0.2);
+    .trans(0.2s);
 }
