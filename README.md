@@ -1,10 +1,7 @@
-# lizFramework
+# lizFramework 2.0
 
 Liz is a beatiful flower, symbol of the north or the destiny of the sailors in the past.
 
-## Dev branch
+## v2.0
 
-This branch brings the less files and a package.json for devDependencies
-
-
-
+The 2.0 version brings a lot of bug corrections
