@@ -1,5 +1,9 @@
 @import 'color-variables.less';
 
+.bg(@bg) {
+    background-color: @bg;
+}
+
 /**
 *
 *   Here are the background colors
@@ -9,44 +13,195 @@
 *
 */
 
-.underline-middle .bg-blue:before,     .underline-left .bg-blue:after,      .bg-blue {background-color: @blue}
-.underline-middle .bg-sky:before,      .underline-left .bg-sky:after,       .bg-sky {background-color: @sky;}
-.underline-middle .bg-summer-sky:before, .underline-left .bg-summer-sky:after, .bg-summer-sky {background-color: @summer-sky;}
-.underline-middle .bg-indigo:before,   .underline-left .bg-indigo:after,   .bg-indigo {background-color: @indigo;}
-.underline-middle .bg-azure:before,    .underline-left .bg-azure:after,    .bg-azure {background-color: @azure;}
-.underline-middle .bg-arctic:before,   .underline-left .bg-artic:after,    .bg-artic {background-color: @artic;}
-.underline-middle .bg-lapis:before,    .underline-left .bg-lapis:after,    .bg-lapis {background-color: @lapis;}
-.underline-middle .bg-admiral:before,  .underline-left .bg-admiral:after,  .bg-admiral {background-color: @admiral;}
-.underline-middle .bg-saphire:before,  .underline-left .bg-saphire:after,  .bg-saphire {background-color: @saphire;}
-.underline-middle .bg-biscay:before,   .underline-left .bg-biscay:after,   .bg-biscay {background-color: @biscay;}
-.underline-middle .bg-royal-blue,      .underline-left .bg-royal-blue,     .bg-royal-blue { background-color: @royal-blue; }
-.underline-middle .bg-picton-blue ,    .underline-left .bg-picton-blue,    .bg-picton-blue { background-color: @picton-blue; }
-.underline-middle .bg-eastern-blue,    .underline-left .bg-eastern-blue,   .bg-eastern-blue { background-color: @eastern-blue; }
-.underline-middle .bg-legion-blue,     .underline-left .bg-legion-blue,    .bg-legion-blue { background-color: @legion-blue; }
-.underline-middle .bg-bracing-blue:before,.underline-left .bg-bracing-blue:after,.bg-bracing-blue {background-color: @bracing-blue;}
-.underline-middle .bg-spanish-blue,       .underline-left .bg-spanish-blue,      .bg-spanish-blue { background-color: @spanish-blue; }
-.underline-middle .bg-tomb-blue,           .underline-left .bg-tomb-blue,        .bg-tomb-blue { background-color: @tomb-blue; }
+.bg-blue, 
+.underline-middle .bg-blue:before,     
+.underline-left .bg-blue:after {
+    .bg(@blue);
+}
+.bg-sky,
+.underline-middle .bg-sky:before,
+.underline-left .bg-sky:after {
+    .bg(@sky);
+}
+.bg-summer-sky,
+.underline-middle .bg-summer-sky:before,
+.underline-left .bg-summer-sky:after {
+    .bg(@summer-sky);
+}
+.bg-indigo,
+.underline-middle .bg-indigo:before,
+.underline-left .bg-indigo:after {
+    .bg(@indigo);
+}
+.bg-azure,
+.underline-middle .bg-azure:before,
+.underline-left .bg-azure:after {
+    .bg(@azure);
+}
+.bg-artic,
+.underline-middle .bg-arctic:before,
+.underline-left .bg-artic:after {
+   .bg(@artic;)
+}
+.bg-lapis,
+.underline-middle .bg-lapis:before,
+.underline-left .bg-lapis:after {
+    .bg(@lapis);
+}
+.bg-admiral,
+.underline-middle .bg-admiral:before,
+.underline-left .bg-admiral:after {
+    .bg(@admiral);
+}
+.bg-saphire,
+.underline-middle .bg-saphire:before,
+.underline-left .bg-saphire:after {
+    .bg(@saphire);
+}
+.bg-biscay,
+.underline-middle .bg-biscay:before,
+.underline-left .bg-biscay:after {
+    .bg(@biscay);
+}
+.bg-royal-blue,
+.underline-middle .bg-royal-blue:before,
+.underline-left .bg-royal-blue:after { 
+    .bg(@royal-blue); 
+}
+.bg-picton-blue,
+.underline-middle .bg-picton-blue:before,
+.underline-left .bg-picton-blue:after { 
+    .bg(@picton-blue); 
+}
+.bg-eastern-blue,
+.underline-middle .bg-eastern-blue:before,
+.underline-left .bg-eastern-blue:after { 
+    .bg(@eastern-blue); 
+}
+.bg-legion-blue,
+.underline-middle .bg-legion-blue:before,
+.underline-left .bg-legion-blue:after { 
+    .bg(@legion-blue); 
+}
+.bg-bracing-blue,
+.underline-middle .bg-bracing-blue:before,
+.underline-left .bg-bracing-blue:after {
+    .bg(@bracing-blue);
+}
+.bg-spanish-blue,
+.underline-middle .bg-spanish-blue:before,
+.underline-left .bg-spanish-blue:after { 
+    .bg(@spanish-blue); 
+}
+.bg-tomb-blue,
+.underline-middle .bg-tomb-blue:before,
+.underline-left .bg-tomb-blue:after { 
+    .bg(@tomb-blue); 
+}
 
-.underline-middle .bg-green:before,    .underline-left .bg-green:after,       .bg-green { background-color: @green; }
-.underline-middle .bg-shamrock:before, .underline-left .bg-shamrock:after,    .bg-shamrock { background-color: @shamrock; }
-.underline-middle .bg-lime:before,     .underline-left .bg-lime:after,        .bg-lime { background-color: @lime; }
-.underline-middle .bg-seafoam:before,  .underline-left .bg-seafoam:after,     .bg-seafoam { background-color: @seafoam; }
-.underline-middle .bg-forest:before,   .underline-left .bg-forest:after,      .bg-forest { background-color: @forest; }
-.underline-middle .bg-emerald:before,  .underline-left .bg-emerald:after,     .bg-emerald { background-color: @emerald; }
-.underline-middle .bg-eucalyptus:before,.underline-left .bg-eucalyptus:after,.bg-eucalyptus { background-color: @eucalyptus;}
-.underline-middle .bg-conifer:before,  .underline-left .bg-conifer:after,     .bg-conifer { background-color: @conifer; }
-.underline-middle .bg-spectra-green,   .underline-left .bg-spectra-green,     .bg-spectra-green { background-color: @spectra-green; }
-.underline-middle .bg-exquisite-turquoise,.underline-left .bg-exquisite-turquoise,   .bg-exquisite-turquoise { background-color: @exquisite-turquoise; }
-.underline-middle .bg-thallium-flame,  .underline-left .bg-thallium-flame,    .bg-thallium-flame { background-color: @thallium-flame; }
+// green classes
+.bg-green,
+.underline-middle .bg-green:before,
+.underline-left .bg-green:after { 
+    .bg(@green); 
+}
 
-.underline-middle .bg-yellow:before,   .underline-left .bg-yellow:after,    .bg-yellow { background-color: @yellow; }
-.underline-middle .bg-amber:before,    .underline-left .bg-amber:after,     .bg-amber { background-color: @amber; }
-.underline-middle .bg-canary:before,   .underline-left .bg-canary:after,    .bg-canary { background-color: @canary; }
-.underline-middle .bg-gold:before,     .underline-left .bg-gold:after,      .bg-gold { background-color: @gold; }
-.underline-middle .bg-fire:before,     .underline-left .bg-fire:after,      .bg-fire { background-color: @fire; }
-.underline-middle .bg-honey:before,    .underline-left .bg-honey:after,     .bg-honey { background-color: @honey; }
-.underline-middle .bg-spiced-nectarine:before,.underline-left .bg-spiced-nectarine:after,.bg-spiced-nectarine { background-color: @spiced-nectarine; }
-.underline-middle .bg-golden-nectar,   .underline-left .bg-golden-nectar,   .bg-golden-nectar { background-color: @golden-nectar; }
+.bg-shamrock,
+.underline-middle .bg-shamrock:before,
+.underline-left .bg-shamrock:after { 
+    .bg(@shamrock); 
+}
+.bg-lime,
+.underline-middle .bg-lime:before,
+.underline-left .bg-lime:after { 
+    .bg(@lime); 
+}
+.bg-seafoam,
+.underline-middle .bg-seafoam:before,
+.underline-left .bg-seafoam:after { 
+    .bg(@seafoam); 
+}
+.bg-forest,
+.underline-middle .bg-forest:before,
+.underline-left .bg-forest:after { 
+    .bg(@forest); 
+}
+.underline-middle .bg-emerald:before,
+.underline-left .bg-emerald:after,
+.bg-emerald {
+    .bg(@emerald); 
+}
+.bg-eucalyptus,
+.underline-middle .bg-eucalyptus:before,
+.underline-left .bg-eucalyptus:after { 
+    .bg(@eucalyptus);
+}
+.bg-conifer,
+.underline-middle .bg-conifer:before,
+.underline-left .bg-conifer:after { 
+    .bg(@conifer); 
+}
+.bg-spectra-green,
+.underline-middle .bg-spectra-green:before,
+.underline-left .bg-spectra-green:after{ 
+    .bg(@spectra-green); 
+}
+.bg-exquisite-turquoise,
+.underline-middle .bg-exquisite-turquoise:before,
+.underline-left .bg-exquisite-turquoise:after{ 
+    .bg(@exquisite-turquoise); 
+}
+.bg-thallium-flame,
+.underline-middle .bg-thallium-flame:before,
+.underline-left .bg-thallium-flame:after{ 
+    .bg(@thallium-flame); 
+}
+
+// yellow classes
+
+.bg-yellow,
+.underline-middle .bg-yellow:before,
+.underline-left .bg-yellow:after{ 
+    .bg(@yellow); 
+}
+.bg-amber,
+.underline-middle .bg-amber:before,
+.underline-left .bg-amber:after{
+    .bg(@amber); 
+}
+.bg-canary,
+.underline-middle .bg-canary:before,
+.underline-left .bg-canary:after{
+    .bg(@canary); 
+}
+.bg-gold,
+.underline-middle .bg-gold:before,
+.underline-left .bg-gold:after{
+    .bg(@gold); 
+}
+.bg-fire,
+.underline-middle .bg-fire:before,
+.underline-left .bg-fire:after{
+    .bg(@fire); 
+}
+.bg-honey,
+.underline-middle .bg-honey:before,
+.underline-left .bg-honey:after{
+    .bg(@honey); 
+}
+.bg-spiced-nectarine,
+.underline-middle .bg-spiced-nectarine:before,
+.underline-left .bg-spiced-nectarine:after {
+    .bg(@spiced-nectarine); 
+}
+.bg-golden-nectar,
+.underline-middle .bg-golden-nectar,
+.underline-left .bg-golden-nectar {
+    .bg(@golden-nectar); 
+}
+
+
+// orange
 
 .underline-middle .bg-orange:before,   .underline-left .bg-orange:after,    .bg-orange { background-color: @orange; }
 .underline-middle .bg-tangerine:before,.underline-left .bg-tangerine:after, .bg-tangerine { background-color: @tangerine; }
@@ -60,16 +215,36 @@
 .underline-middle .bg-echinoida-torns, .underline-left .bg-echinoida-torns, .bg-echinoida-torns { background-color: @echinoida-torns; }
 .underline-middle .bg-teri-gaki-persimmon, .underline-left .bg-teri-gaki-persimmon, .bg-teri-gaki-persimmon { background-color: @teri-gaki-persimmon; }
 
+// brown
+
 .underline-middle .bg-brown:before,    .underline-left .bg-brown:after,     .bg-brown { background-color: @brown; }
 .underline-middle .bg-clay:before,     .underline-left .bg-clay:after,      .bg-clay { background-color: @clay; }
 .underline-middle .bg-spice:before,    .underline-left .bg-spice:after,     .bg-spice { background-color: @spice; }
 .underline-middle .bg-rust:before,     .underline-left .bg-rust:after,      .bg-rust { background-color: @rust; }
 .underline-middle .bg-ginger:before,   .underline-left .bg-ginger:after,    .bg-ginger { background-color: @ginger; }
 
-.underline-middle .bg-red:before,      .underline-left .bg-red:after,       .bg-red { background-color: @red; }
-.underline-middle .bg-cherry:before,   .underline-left .bg-cherry:after,    .bg-cherry { background-color: @cherry; }
-.underline-middle .bg-scarlet:before,  .underline-left .bg-scarlet:after,   .bg-scarlet { background-color: @scarlet; }
-.underline-middle .bg-ruby:before,     .underline-left .bg-ruby:after,      .bg-ruby { background-color: @ruby; }
+// red
+
+.bg-red,
+.underline-middle .bg-red:before, 
+.underline-left .bg-red:after { 
+    .bg(@red); 
+}
+.bg-cherry,
+.underline-middle .bg-cherry:before, 
+.underline-left .bg-cherry:after {
+    .bg(@cherry); 
+}
+.bg-scarlet,
+.underline-middle .bg-scarlet:before, 
+.underline-left .bg-scarlet:after {
+    .bg(@scarlet); 
+}
+.bg-ruby,
+.underline-middle .bg-ruby:before, 
+.underline-left .bg-ruby:after {
+    .bg(@ruby); 
+}
 
 .underline-middle .bg-purple:before,   .underline-left .bg-purple:after,    .bg-purple { background-color: @purple; }
 .underline-middle .bg-fuchsia:before,  .underline-left .bg-fuchsia:after,   .bg-fuchsia { background-color: @fuchsia; }
@@ -80,28 +255,114 @@
 .underline-middle .bg-wild-aster:before,.underline-left .bg-wild-aster:after,.bg-wild-aster { background-color: @wild-aster; }
 .underline-middle .bg-popstar:before,  .underline-left .bg-popstar:after,   .bg-popstar { background-color: @popstar; }
 
-.underline-middle .bg-pink:before,     .underline-left .bg-pink:after,     .bg-pink { background-color: @pink; }
-.underline-middle .bg-lilac:before,    .underline-left .bg-lilac:after,    .bg-lilac { background-color: @lilac; }
-.underline-middle .bg-amethyst:before, .underline-left .bg-amethyst:after, .bg-amethyst { background-color: @amethyst; }
+// pink
 
-.underline-middle .bg-ebony-clay, .underline-left .bg-ebony-clay, .bg-ebony-clay {background-color: @ebony-clay; }
+.bg-pink,
+.underline-middle .bg-pink:before,
+.underline-left .bg-pink:after {
+    .bg(@pink); 
+}
+.bg-lilac,
+.underline-middle .bg-lilac:before,
+.underline-left .bg-lilac:after {
+    .bg(@lilac); 
+}
+.bg-amethyst,
+.underline-middle .bg-amethyst:before,
+.underline-left .bg-amethyst:after {
+    .bg(@amethyst); 
+}
 
-.underline-middle .bg-black,      .underline-left .bg-black,    .bg-black { color: #000; }
-.underline-middle .bg-white,      .underline-left .bg-white,    .bg-white { color: #fff; }
-.underline-middle .bg-grey-111,   .underline-left .bg-grey-111,  .bg-grey-111 { background-color: #111; }
-.underline-middle .bg-grey-222,   .underline-left .bg-grey-222,  .bg-grey-222 { background-color: #222; }
-.underline-middle .bg-grey-333,   .underline-left .bg-grey-333,  .bg-grey-333 { background-color: #333; }
-.underline-middle .bg-grey-444,   .underline-left .bg-grey-444,  .bg-grey-444 { background-color: #444; }
-.underline-middle .bg-grey-555,   .underline-left .bg-grey-555,  .bg-grey-555 { background-color: #555; }
-.underline-middle .bg-grey-666,   .underline-left .bg-grey-666,  .bg-grey-666 { background-color: #666; }
-.underline-middle .bg-grey-777,   .underline-left .bg-grey-777,  .bg-grey-777 { background-color: #777; }
-.underline-middle .bg-grey-888,   .underline-left .bg-grey-888,  .bg-grey-888 { background-color: #888; }
-.underline-middle .bg-grey-999,   .underline-left .bg-grey-999,  .bg-grey-999 { background-color: #999; }
-.underline-middle .bg-grey-aaa,   .underline-left .bg-grey-aaa,  .bg-grey-aaa { background-color: #aaa; }
-.underline-middle .bg-grey-bbb,   .underline-left .bg-grey-bbb,  .bg-grey-bbb { background-color: #bbb; }
-.underline-middle .bg-grey-ccc,   .underline-left .bg-grey-ccc,  .bg-grey-ccc { background-color: #ccc; }
-.underline-middle .bg-grey-ddd,   .underline-left .bg-grey-ddd,  .bg-grey-ddd { background-color: #ddd; }
-.underline-middle .bg-grey-eee,   .underline-left .bg-grey-eee,  .bg-grey-eee { background-color: #eee; }
+// clay
+
+.bg-ebony-clay,
+.underline-middle .bg-ebony-clay:before, 
+.underline-left .bg-ebony-clay:after {
+    .bg(@ebony-clay); 
+}
+
+// black, white and grey
+
+.bg-black,
+.underline-middle .bg-black:before,
+.underline-left .bg-black:after {
+    .bg(#000); 
+}
+.bg-white,
+.underline-middle .bg-white:before,
+.underline-left .bg-white:after {
+    .bg(#fff); 
+}
+.bg-grey-111,
+.underline-middle .bg-grey-111:before,
+.underline-left .bg-grey-111:after{
+    .bg(#111); 
+}
+.bg-grey-222,
+.underline-middle .bg-grey-222:before,
+.underline-left .bg-grey-222:after{
+    .bg(#222); 
+}
+.bg-grey-333,
+.underline-middle .bg-grey-333:before,
+.underline-left .bg-grey-333:after{
+    .bg(#333); 
+}
+.bg-grey-444,
+.underline-middle .bg-grey-444:before,
+.underline-left .bg-grey-444:after{
+    .bg(#444); 
+}
+.bg-grey-555,
+.underline-middle .bg-grey-555:before,
+.underline-left .bg-grey-555:after{
+    .bg(#555); 
+}
+.bg-grey-666,
+.underline-middle .bg-grey-666:before,
+.underline-left .bg-grey-666:after{
+    .bg(#666); 
+}
+.bg-grey-777,
+.underline-middle .bg-grey-777:before,
+.underline-left .bg-grey-777:after{
+    .bg(#777); 
+}
+.bg-grey-888,
+.underline-middle .bg-grey-888:before,
+.underline-left .bg-grey-888:after{
+    .bg(#888); 
+}
+.bg-grey-999,
+.underline-middle .bg-grey-999:before,
+.underline-left .bg-grey-999:after{
+    .bg(#999); 
+}
+.bg-grey-aaa,
+.underline-middle .bg-grey-aaa:before,
+.underline-left .bg-grey-aaa:after{
+    .bg(#aaa); 
+}
+.bg-grey-bbb,
+.underline-middle .bg-grey-bbb:before,
+.underline-left .bg-grey-bbb:after{
+    .bg(#bbb); 
+}
+.bg-grey-ccc,
+.underline-middle .bg-grey-ccc:before,
+.underline-left .bg-grey-ccc:after{
+    .bg(#ccc); 
+}
+.bg-grey-ddd,
+.underline-middle .bg-grey-ddd:before,
+.underline-left .bg-grey-ddd:after{
+    .bg(#ddd); 
+}
+.bg-grey-eee,
+.underline-middle .bg-grey-eee:before,
+.underline-left .bg-grey-eee:after{
+    .bg(#eee); 
+}
 
 /**
 *   The font color following, they are the same colors found in the bg   
@@ -205,83 +466,108 @@
     linear gradients
 */
 
+.gradient(@color1, @color2) {
+    background-image: linear-gradient(to right, @color1, @color2);
+    -webkit-background-image: linear-gradient(to right, @color1, @color2);    
+}
+
 .biscay-to-eucalyptus {
-    background-image: linear-gradient(to right, @biscay, @eucalyptus);
-    -webkit-background-image: linear-gradient(to right, @biscay, @eucalyptus);
+    // background-image: linear-gradient(to right, @biscay, @eucalyptus);
+    // -webkit-background-image: linear-gradient(to right, @biscay, @eucalyptus);
+    .gradient(@biscay, @eucalyptus);
 }
 .eucalyptus-to-conifer {
-    background-image: linear-gradient(to right, @eucalyptus, @conifer);
-    -webkit-background-image: linear-gradient(to right, @eucalyptus, @conifer);
+    // background-image: linear-gradient(to right, @eucalyptus, @conifer);
+    // -webkit-background-image: linear-gradient(to right, @eucalyptus, @conifer);
+    .gradient(@eucalyptus, @conifer);
 }
 .conifer-to-fuel-yellow {
-    background-image: linear-gradient(to right, @conifer, @fuel-yellow);
-    -webkit-background-image: linear-gradient(to right, @conifer, @fuel-yellow)
+    // background-image: linear-gradient(to right, @conifer, @fuel-yellow);
+    // -webkit-background-image: linear-gradient(to right, @conifer, @fuel-yellow);
+    .gradient(@conifer, @fuel-yellow);
 }
 .fuel-yellow-to-crusta {
-    background-image: linear-gradient(to right, @fuel-yellow, @crusta);
-    -webkit-background-image: linear-gradient(to right, @fuel-yellow, @crusta);
+    // background-image: linear-gradient(to right, @fuel-yellow, @crusta);
+    // -webkit-background-image: linear-gradient(to right, @fuel-yellow, @crusta);
+    .gradient(@fuel-yellow, @crusta);
 }
 .imperial-purple-to-wild-aster {
-    background-image: linear-gradient(to right, @imperial-purple, @wild-aster);
-    -webkit-background-image: linear-gradient(to right, @imperial-purple, @wild-aster);
+    // background-image: linear-gradient(to right, @imperial-purple, @wild-aster);
+    // -webkit-background-image: linear-gradient(to right, @imperial-purple, @wild-aster);
+    .gradient(@imperial-purple, @wild-aster);
 }
 .wild-aster-to-popstar {
-    background-image: linear-gradient(to right, @wild-aster, @popstar);
-    -webkit-background-image: linear-gradient(to right, @wild-aster, @popstar);
+    // background-image: linear-gradient(to right, @wild-aster, @popstar);
+    // -webkit-background-image: linear-gradient(to right, @wild-aster, @popstar);
+    .gradient(@wild-aster, @popstar);
 }
 .popstar-to-roasted-sienna {
-    background-image: linear-gradient(to right, @popstar, @roasted-sienna);
-    -webkit-background-image: linear-gradient(to right, @popstar, @roasted-sienna);
+    // background-image: linear-gradient(to right, @popstar, @roasted-sienna);
+    // -webkit-background-image: linear-gradient(to right, @popstar, @roasted-sienna);
+    .gradient(@popstar, @roasted-sienna);
 }
 .roasted-sienna-to-spiced-nectarine {
-    background-image: linear-gradient(to right, @roasted-sienna, @spiced-nectarine);
-    -webkit-background-image: linear-gradient(to right, @roasted-sienna, @spiced-nectarine);
+    // background-image: linear-gradient(to right, @roasted-sienna, @spiced-nectarine);
+    // -webkit-background-image: linear-gradient(to right, @roasted-sienna, @spiced-nectarine);
+    .gradient(@roasted-sienna, @spiced-nectarine);
 }
 .ebony-clay-to-royal-blue {
-    background-image: linear-gradient(to right, @ebony-clay, @royal-blue);
-    -webkit-background-image: linear-gradient(to right, @ebony-clay, @royal-blue);
+    // background-image: linear-gradient(to right, @ebony-clay, @royal-blue);
+    // -webkit-background-image: linear-gradient(to right, @ebony-clay, @royal-blue);
+    .gradient(@ebony-clay, @royal-blue);
 }
 .royal-blue-to-picton-blue {
-    background-image: linear-gradient(to right, @royal-blue, @picton-blue);
-    -webkit-background-image: linear-gradient(to right, @royal-blue, @picton-blue);
+    // background-image: linear-gradient(to right, @royal-blue, @picton-blue);
+    // -webkit-background-image: linear-gradient(to right, @royal-blue, @picton-blue);
+    .gradient(@royal-blue, @picton-blue);
 }
 .picton-blue-to-eastern-blue {
-    background-image: linear-gradient(to right, @picton-blue, @eastern-blue);
-    -webkit-background-image: linear-gradient(to right, @picton-blue, @eastern-blue);
+    // background-image: linear-gradient(to right, @picton-blue, @eastern-blue);
+    // -webkit-background-image: linear-gradient(to right, @picton-blue, @eastern-blue);
+    .gradient(@picton-blue, @eastern-blue);
 }
 .eastern-blue-to-chardonnay {
-    background-image: linear-gradient(to right, @eastern-blue, @chardonnay);
-    -webkit-background-image: linear-gradient(to right, @eastern-blue, @chardonnay);
+    // background-image: linear-gradient(to right, @eastern-blue, @chardonnay);
+    // -webkit-background-image: linear-gradient(to right, @eastern-blue, @chardonnay);
+    .gradient(@eastern-blue, @chardonnay);
 }
 .legion-blue-to-spectra-green {
-    background-image: linear-gradient(to right, @legion-blue, @spectra-green);
-    -webkit-background-image: linear-gradient(to right, @legion-blue, @spectra-green);
+    // background-image: linear-gradient(to right, @legion-blue, @spectra-green);
+    // -webkit-background-image: linear-gradient(to right, @legion-blue, @spectra-green);
+    .gradient(@legion-blue, @spectra-green);
 }
 .spectra-green-to-golden-nectar {
-    background-image: linear-gradient(to right, @spectra-green, @golden-nectar);
-    -webkit-background-image: linear-gradient(to right, @spectra-green, @golden-nectar);
+    // background-image: linear-gradient(to right, @spectra-green, @golden-nectar);
+    // -webkit-background-image: linear-gradient(to right, @spectra-green, @golden-nectar);
+    .gradient(@spectra-green, @golden-nectar);
 }
 .golden-nectar-to-echinoida-torns {
-    background-image: linear-gradient(to right, @golden-nectar, @echinoida-torns);
-    -webkit-background-image: linear-gradient(to right, @golden-nectar, @echinoida-torns);
+    // background-image: linear-gradient(to right, @golden-nectar, @echinoida-torns);
+    // -webkit-background-image: linear-gradient(to right, @golden-nectar, @echinoida-torns);
+    .gradient(@golden-nectar, @echinoida-torns);
 }
 .echinoida-torns-to-teri-gaki-persimmon {
-    background-image: linear-gradient(to right, @echinoida-torns, @teri-gaki-persimmon);
-    -webkit-background-image: linear-gradient(to right, @echinoida-torns, @teri-gaki-persimmon);
+    // background-image: linear-gradient(to right, @echinoida-torns, @teri-gaki-persimmon);
+    // -webkit-background-image: linear-gradient(to right, @echinoida-torns, @teri-gaki-persimmon);
+    .gradient(@echinoida-torns, @teri-gaki-persimmon);
 }
 .bracing-blue-to-spanish-blue {
-    background-image: linear-gradient(to right, @bracing-blue, @spanish-blue);
-    -webkit-background-image: linear-gradient(to right, @bracing-blue, @spanish-blue);
+    // background-image: linear-gradient(to right, @bracing-blue, @spanish-blue);
+    // -webkit-background-image: linear-gradient(to right, @bracing-blue, @spanish-blue);
+    .gradient(@bracing-blue, @spanish-blue);
 }
 .spanish-blue-to-tomb-blue {
-    background-image: linear-gradient(to right, @spanish-blue, @tomb-blue);
-    -webkit-background-image: linear-gradient(to right, @spanish-blue, @tomb-blue);
+    // background-image: linear-gradient(to right, @spanish-blue, @tomb-blue);
+    // -webkit-background-image: linear-gradient(to right, @spanish-blue, @tomb-blue);
+    .gradient(@spanish-blue, @tomb-blue);
 }
 .tomb-blue-to-exquisite-turquoise {
-    background-image: linear-gradient(to right, @tomb-blue, @exquisite-turquoise);
-    -webkit-background-image: linear-gradient(to right, @tomb-blue, @exquisite-turquoise);
+    // background-image: linear-gradient(to right, @tomb-blue, @exquisite-turquoise);
+    // -webkit-background-image: linear-gradient(to right, @tomb-blue, @exquisite-turquoise);
+    .gradient(@tomb-blue, @exquisite-turquoise);
 }
-.exquisite-turquoise-to-thallium {
-    background-image: linear-gradient(to right, @exquisite-turquoise, @thallium-flame);
-    -webkit-background-image: linear-gradient(to right, @exquisite-turquoise, @thallium-flame);
+.exquisite-turquoise-to-thallium-flame {
+    // background-image: linear-gradient(to right, @exquisite-turquoise, @thallium-flame);
+    // -webkit-background-image: linear-gradient(to right, @exquisite-turquoise, @thallium-flame);
+    .gradient(@exquisite-turquoise, @thallium-flame);
 }
